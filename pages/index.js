@@ -1,81 +1,52 @@
 import Head from 'next/head'
+import { useState } from 'react'
 
 export default function Home() {
+
+  const [store, setStore] = useState('')
+
+  function createHandler(event){
+    event.preventDefault();
+    let store = {
+      location: event.target.location.value,
+      min: event.target.min.value,
+      max: event.target.max.value,
+      ave: event.target.ave.value,
+    }
+    setStore(store)
+  }
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Cookie Stand Admin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <header className="bg-green-500 px-10 py-5 text-4xl font-bold">
+        <h1>Cookie Stand Admin</h1>
+      </header>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main className="bg-green-200 w-full p-10 text-center grid justify-items-stretch px-0">
+        <form onSubmit={createHandler} className="bg-green-300 px-10 py-5 w-4/5justify-self-center rounded mx-12">
+          <h2 className="p-5 text-2xl">Create Cookie Stand</h2>
+          <label className="w-5/6">Location:<input className="w-5/6 m-3 " name="location"/></label>
+          <section className="py-5">
+            <label className="inline-block m-3">Minimum Customuers per Hour<br/><input className="w-60" name="min"/></label>
+            <label className="inline-block m-3">Maximum Customuers per Hour<br/><input className="w-60" name="max"/></label>
+            <label className="inline-block m-3">Average Cookies per Sale<br/><input className="w-60" name="ave"/></label>
+            <button className="bg-green-400 m-3 p-8 py-5" type="submit">Create</button>
+          </section>
+        </form>
+        <section className="text=center p-10">
+          <p className="m-3">Report Table Coming Soon..</p>
+          <p className="m-3">{JSON.stringify(store)}</p>
+        </section>
+        <footer className="bg-green-500 h-15 text-left p-5">&#169;2021</footer>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+      <footer className="">
+        
       </footer>
     </div>
   )
