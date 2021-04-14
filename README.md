@@ -1,4 +1,21 @@
-# Next.js + Tailwind CSS Example
+**Author:** Matthew Holder
+**Version:** 0.1
+
+[PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/1#issue-615550657)
+
+# Cookie Stand Admin
+
+## React I
+
+- [x] `pages/Index.js` should…
+- [x] Have `<Head>` component with page title set to Cookie Stand Admin
+- [x] Have a header component that matches [spec](https://codefellows.github.io/code-401-python-guide/curriculum/class-37/lab/cookie-stand-admin-version-1.png).
+- [x] Have a `<main>` component containing `<form>` and a placeholder component showing JSON string of last created Cookie Stand.
+- [x] Have a `<footer>` component that matches spec.
+- [x] Style app using TailwindCSS utility classes.
+
+
+<!-- # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2.1) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
@@ -20,4 +37,4 @@ npx create-next-app --example with-tailwindcss with-tailwindcss-app
 yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)). -->
