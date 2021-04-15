@@ -1,7 +1,8 @@
 **Author:** Matthew Holder
 **Version:** 0.1
 
-[PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/1#issue-615550657)
+[ReactI PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/1#issue-615550657)
+[ReactII PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/2#issue-616456846)
 
 # Cookie Stand Admin
 
