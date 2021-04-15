@@ -42,12 +42,12 @@
 - [x] `<Footer>` component details…
     - [x] Should receive reports array on props.
     - [x] Should display X Locations World Wide where X is number of cookie stands.
-- [] `<Header>`,`<Footer>`,`<CreateForm>` and `<ReportTable>` should each be in own file inside top level components folder.
-- [] Those components should be imported into Index.js
-- [] Overview page details…
-- [] should live in pages/overview.js
-- [] should render `<Link href="/"><a>Return to Main page</a></Link>`
-- [] Style all components using TailwindCSS utility classes to match spec.
+- [x] `<Header>`,`<Footer>`,`<CreateForm>` and `<ReportTable>` should each be in own file inside top level components folder.
+- [x] Those components should be imported into Index.js
+- [x] Overview page details…
+- [x] should live in pages/overview.js
+- [x] should render `<Link href="/"><a>Return to Main page</a></Link>`
+- [x] Style all components using TailwindCSS utility classes to match spec.
 
 
 <!-- # Next.js + Tailwind CSS Example
