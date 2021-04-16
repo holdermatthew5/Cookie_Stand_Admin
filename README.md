@@ -3,6 +3,7 @@
 
 [ReactI PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/1#issue-615550657)
 [ReactII PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/2#issue-616456846)
+[ReactIII PR]()
 
 # Cookie Stand Admin
 
@@ -50,6 +51,25 @@
 - [x] should render `<Link href="/"><a>Return to Main page</a></Link>`
 - [x] Style all components using TailwindCSS utility classes to match spec.
 
+## React III
+
+- [x] pages/Index.js should export a `<Home>` component.
+- [] `<Home>` requirements
+    - [] If user is NOT logged in then `<LoginForm>` should render.
+    - [] If user IS logged in then `<CookieStandAdmin>` component should render.
+- [] `<LoginForm>` requirements
+    - [] Should receive a function passed in to call when form is submitted.
+    - [] The function should be called with username and password arguments.
+- [] `<CookieStandAdmin>` requirements
+    - [] When user fills out form to add location then the data should be posted to API
+    - [] While waiting for API response the `<CookieStandTable>` should render the new row in a pending state.
+    - [] When API response is complete then `<CookieStandTable>` should render latest data.
+- [] `<CookieStandTable>` requirements
+    - [] Component should continue to display Cookie Stand info as in version 2
+    - [] Add a delete icon in each stand’s location cell.
+    - [] Clicking delete icon should immediately delete the Cookie Stand.
+    - [] API should be informed that Cookie Stand was deleted.
+- [] Continue to style all components using TailwindCSS utility classes to match spec.
 
 <!-- # Next.js + Tailwind CSS Example
 

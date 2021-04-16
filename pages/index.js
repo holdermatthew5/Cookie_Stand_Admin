@@ -1,15 +1,18 @@
 import Link from 'next/link'
 import { hours } from '../data'
 import { useState } from 'react'
+import { getToken } from '../data'
 import CreateForm from '../components/createForm'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import ReportTable from '../components/reportTable'
+import LoginForm from '../components/loginForm'
 
 export default function Home() {
 
   // const [store, setStore] = useState('');
   const [reports, setReports] = useState([]);
+  const [token, setToken] = useState(null);
 
   function onCreate(event){
     event.preventDefault();
@@ -27,9 +30,21 @@ export default function Home() {
     setReports([...reports, storeReport]);
   }
 
-  return (
-    <CreateStandAdmin />
-  )
+  async function loginHandler(values){
+    // event.preventDefault();
+    const retrievedToken = await getToken(values);
+    setToken(retrievedToken);
+  }
+
+  if (!token){
+    return (
+      <LoginForm />
+    )
+  } else {
+    return (
+      <CreateStandAdmin />
+    )
+  }
   
   function CreateStandAdmin(props){
     return (
