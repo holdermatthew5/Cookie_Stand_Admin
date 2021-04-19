@@ -54,21 +54,21 @@
 ## React III
 
 - [x] pages/Index.js should export a `<Home>` component.
-- [] `<Home>` requirements
-    - [] If user is NOT logged in then `<LoginForm>` should render.
-    - [] If user IS logged in then `<CookieStandAdmin>` component should render.
-- [] `<LoginForm>` requirements
-    - [] Should receive a function passed in to call when form is submitted.
-    - [] The function should be called with username and password arguments.
-- [] `<CookieStandAdmin>` requirements
-    - [] When user fills out form to add location then the data should be posted to API
-    - [] While waiting for API response the `<CookieStandTable>` should render the new row in a pending state.
-    - [] When API response is complete then `<CookieStandTable>` should render latest data.
-- [] `<CookieStandTable>` requirements
-    - [] Component should continue to display Cookie Stand info as in version 2
-    - [] Add a delete icon in each stand’s location cell.
-    - [] Clicking delete icon should immediately delete the Cookie Stand.
-    - [] API should be informed that Cookie Stand was deleted.
+- [x] `<Home>` requirements
+    - [x] If user is NOT logged in then `<LoginForm>` should render.
+    - [x] If user IS logged in then `<CookieStandAdmin>` component should render.
+- [x] `<LoginForm>` requirements
+    - [x] Should receive a function passed in to call when form is submitted.
+    - [x] The function should be called with username and password arguments.
+- [x] `<CookieStandAdmin>` requirements
+    - [x] When user fills out form to add location then the data should be posted to API
+    - [x] While waiting for API response the `<CookieStandTable>` should render the new row in a pending state.
+    - [x] When API response is complete then `<CookieStandTable>` should render latest data.
+- [x] `<CookieStandTable>` requirements
+    - [x] Component should continue to display Cookie Stand info as in version 2
+    - [x] Add a delete icon in each stand’s location cell.
+    - [x] Clicking delete icon should immediately delete the Cookie Stand.
+    - [x] API should be informed that Cookie Stand was deleted.
 - [] Continue to style all components using TailwindCSS utility classes to match spec.
 
 <!-- # Next.js + Tailwind CSS Example
