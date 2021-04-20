@@ -40,11 +40,15 @@ export default function Home() {
 
   if (!token){
     return (
-      <LoginForm loginHandler={ loginHandler }/>
+      <div className="text-center w-4/5 m-auto">
+        <LoginForm loginHandler={ loginHandler }/>
+      </div>
     )
   } else {
     return (
-      <CookieStandAdmin token={ token } onLogout={ logoutHandler } username={ username } />
+      <div className="w-4/5">
+        <CookieStandAdmin token={ token } onLogout={ logoutHandler } username={ username } />
+      </div>
     )
   }
   

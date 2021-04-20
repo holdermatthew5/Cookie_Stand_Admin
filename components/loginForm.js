@@ -24,18 +24,18 @@ export default function LoginForm({ loginHandler }) {
 
     return (
 
-        <form onSubmit={submitHandler}>
-            <div>
-                <label htmlFor="username">User Name</label>
-                <input type="text" name="username" id="username" value={values.username} onChange={inputChangeHandler} placeholder="User Name" />
+        <form onSubmit={submitHandler} className="bg-green-200 w-4/5 m-auto border-4 border-green-500 rounded">
+            <div className="my-5">
+                <label htmlFor="username" className="">User Name</label>
+                <input type="text" name="username" id="username" value={values.username} onChange={inputChangeHandler} placeholder="User Name" className="block w-11/12 m-auto my-2 p-2" />
             </div>
 
             <div>
-                <label htmlFor="password">Password</label>
-                <input type="password" name="password" id="password" value={values.password} onChange={inputChangeHandler} placeholder="password" />
+                <label htmlFor="password" className="">Password</label>
+                <input type="password" name="password" id="password" value={values.password} onChange={inputChangeHandler} placeholder="password" className="block w-11/12 m-auto my-2 p-2" />
             </div>
 
-            <button type="submit">Sign In</button>
+            <button type="submit" className="bg-green-400 w-11/12 py-5 my-5 rounded">Sign In</button>
 
         </form>
     );

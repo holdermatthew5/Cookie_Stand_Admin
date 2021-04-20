@@ -27,26 +27,26 @@ export default function CookieStandForm({ onCreate }) {
         setValues({ ...values, [name]: value });
     }
     return (
-        <form onSubmit={submitHandler}>
-            <div>
-                <label htmlFor="location">Add Location</label>
-                <input type="text" name="location" id="location" value={values.location} onChange={inputChangeHandler} placeholder="Cookie Stand Location" />
+        <form onSubmit={submitHandler} className="bg-green-300 w-4/5 p-5 m-auto border-4 border-green-500 rounded">
+            <div className="inline-block w-2/3">
+                <label htmlFor="location" className="">Add Location</label>
+                <input type="text" name="location" id="location" value={values.location} onChange={inputChangeHandler} placeholder="Cookie Stand Location" className="block w-11/12 m-auto m-4 p-2" />
             </div>
 
-            <button type="submit">Create Stand</button>
+            <button type="submit" className="bg-green-500 inline-block py-5 w-1/3">Create Stand</button>
 
 
             <FormInputSection>
-                <label htmlFor="min">Minimum Customers per Hour</label>
-                <input type="number" name="min" id="min" value={values.min} onChange={inputChangeHandler} />
+                <label htmlFor="min" className="block m-5">Minimum Customers per Hour</label>
+                <input type="number" name="min" id="min" value={values.min} onChange={inputChangeHandler} className="block w-11/12 p-2" />
             </FormInputSection>
             <FormInputSection>
-                <label htmlFor="max">Maximum Customers per Hour</label>
-                <input type="number" name="max" id="max" value={values.max} onChange={inputChangeHandler} />
+                <label htmlFor="max" className="block m-5">Maximum Customers per Hour</label>
+                <input type="number" name="max" id="max" value={values.max} onChange={inputChangeHandler} className="block w-11/12 p-2" />
             </FormInputSection>
             <FormInputSection>
-                <label htmlFor="avg">Average Cookies per Sale</label>
-                <input type="number" name="avg" id="avg" value={values.avg} onChange={inputChangeHandler} />
+                <label htmlFor="avg" className="block m-5">Average Cookies per Sale</label>
+                <input type="number" name="avg" id="avg" value={values.avg} onChange={inputChangeHandler} className="block w-11/12 p-2" />
             </FormInputSection>
         </form>
     );
@@ -54,7 +54,7 @@ export default function CookieStandForm({ onCreate }) {
 
 function FormInputSection({ children }) {
     return (
-        <div>
+        <div className="inline-block w-1/3 m-auto">
             {children}
         </div>
     );

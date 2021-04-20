@@ -6,7 +6,7 @@ export default function CookieStandTable({stands, onDelete}){
 
     return (
         <Table>
-            <thead>
+            <thead className="bg-green-400">
                 <tr>
                     <TH>Location</TH>
                         {hours.map(slot => (
@@ -35,7 +35,7 @@ export default function CookieStandTable({stands, onDelete}){
                     )
                 })}
             </tbody>
-            <tfoot>
+            <tfoot className="bg-green-400">
                 <tr>
                     <TH>Totals</TH>
                     {hours.map((_, i) => {
@@ -50,20 +50,20 @@ export default function CookieStandTable({stands, onDelete}){
 
     function Table({ children }) {
         return (
-            <table>
+            <table className="bg-green-300 w-4/5 m-auto border-t-2 border-l-2 border-green-500 my-5 rounded">
                 {children}
             </table>
         );
     }
     function TH({ children }) {
         return (
-            <th>{children}</th>
+            <th className="border-r-2 border-b-2 border-green-500">{children}</th>
         )
     }
     
     function TD({ children }) {
         return (
-            <td>{children}</td>
+            <td className="border-r-2 border-b-2 border-green-500">{children}</td>
         )
     }
 }
