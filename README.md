@@ -69,7 +69,7 @@
     - [x] Add a delete icon in each stand’s location cell.
     - [x] Clicking delete icon should immediately delete the Cookie Stand.
     - [x] API should be informed that Cookie Stand was deleted.
-- [] Continue to style all components using TailwindCSS utility classes to match spec.
+- [x] Continue to style all components using TailwindCSS utility classes to match spec.
 
 <!-- # Next.js + Tailwind CSS Example
 
