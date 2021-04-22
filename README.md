@@ -5,6 +5,7 @@
 [ReactI PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/1#issue-615550657)
 [ReactII PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/2#issue-616456846)
 [ReactIII PR](https://github.com/holdermatthew5/cookie_stand_admin/pull/3#issue-616542650)
+[ReactIV](https://github.com/holdermatthew5/cookie_stand_admin/pull/4#issue-620711048)
 
 # Cookie Stand Admin
 
